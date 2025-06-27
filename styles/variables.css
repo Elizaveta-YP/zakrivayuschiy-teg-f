@@ -1,1 +1,32 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+--main-font: 'Inter-Variable';
+--accent-font: 'Press Start 2P Regular';
+--text-card-weight: 400;     /* Основной вес текста */
+--heading-card-weight: 700;  /*вес заголовков*/
+--color-text: #000000;
+--size-h1: 65px;
+--size-h2: 23px;
+--heading-style-color: #fff;
+--background-color: #fff;
+--bg-color: #fff;
+--color-accent: #000;
+
+
+--background-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 1%, #1a1a1a 100%);
+     background-image: var(--background-gradient);
+}
