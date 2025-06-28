@@ -295,11 +295,11 @@ dialog[open] {
 }
 
 .blur {
-  filter: blur (10%);
+  filter: blur(10%);
 }
 
 .saturate {
-  filter: 20%;
+  filter: saturate(20%);
 }
 
 .btn,
