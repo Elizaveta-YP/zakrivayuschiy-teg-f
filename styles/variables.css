@@ -11,6 +11,8 @@
 --background-color: #fff;
 --bg-color: #fff;
 --color-accent: #000;
+--contour-color: black;
+--animation-fill-color: red;
 
 
 --background-gradient: repeating-linear-gradient(

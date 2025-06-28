@@ -326,11 +326,24 @@ background-color: var(--bg-color);
   background-color: #fff;
 }
 
-.floppy {
-   z-index: 10;
-   mix-blend-mode: difference;
+.btn {
+ margin-inline-start: 760px;
 }
 
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+.button-text {
+  background-color: #fff;
+  color: #fff;
+}
+.card__icon-button {
+  color: #fff;
+  background-color: #fff;
+}
 
 .card__like-button:focus,
 .btn:focus {
@@ -339,32 +352,11 @@ box-shadow: 2px 2px 0 0 var(--color-accent);
 transition: box-shadow 0.3s ease;
 }
 
-
-/* .card__like-button::before,
-.btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  transition: transform 0.5s ease-in-out;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-.card__like-button:hover::before,
-.btn:hover::before {
-  transform: scaleX(1);
-} */
-
 .card__like-button, 
 .btn {
   position: relative;
   padding: 10px 20px;
-  background: #fff;
+  background-color: #fff;
   border: 2px solid #000;
   color: transparent; 
   font-family: sans-serif;
@@ -405,7 +397,6 @@ transition: box-shadow 0.3s ease;
 
 .like-icon {
 height: 30px;
-/* background-color: #fff; */
 }
 
 .like-icon:focus {
@@ -416,7 +407,6 @@ outline:none;
   outline: 2px solid #000;
   transition: outline 0.3s ease;
 }
-
 
 @media (width <= 375px) {
 
