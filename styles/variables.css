@@ -2,20 +2,18 @@
 :root {
 --main-font: 'Inter-Variable';
 --accent-font: 'Press Start 2P Regular';
---text-card-weight: 400;     /* Основной вес текста */
---heading-card-weight: 700;  /*вес заголовков*/
+--text-card-weight: 400;     
+--heading-card-weight: 700;  
 --color-text: #000000;
---size-h1: 65px;
---size-h2: 23px;
+--main-header-size: 65px;
+ --text-stroke-color:rgba(255, 255, 255, 0.5);
 --heading-style-color: #fff;
 --background-color: #fff;
 --bg-color: #fff;
 --color-accent: #000;
-/* --contour-color: black;
---animation-fill-color: red; */
-
 --heart-contour-color: #000;
 --animation-fill-color: #FF0000;
+--accent-color: #000;
 
 
 --background-gradient: repeating-linear-gradient(
