@@ -11,8 +11,11 @@
 --background-color: #fff;
 --bg-color: #fff;
 --color-accent: #000;
---contour-color: black;
---animation-fill-color: red;
+/* --contour-color: black;
+--animation-fill-color: red; */
+
+--heart-contour-color: #000;
+--animation-fill-color: #FF0000;
 
 
 --background-gradient: repeating-linear-gradient(
