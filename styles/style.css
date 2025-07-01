@@ -106,7 +106,6 @@
   background-blend-mode: hard-light;
   font-family: var(--accent-font, sans-serif);
   text-shadow: none;
-  background-blend-mode: hard-light;
   mix-blend-mode: hard-light;
   text-shadow:
     -1px 0 var(--text-stroke-color),
@@ -125,10 +124,6 @@
   }
 }
 
-.button__text {
-  font-family: var(--accent-font, sans-serif);
-}
-
 .button {
   position: relative;
   font-family: var(--accent-font, sans-serif);
@@ -140,7 +135,8 @@
 
 .button:focus-visible {
   outline: none;
-  box-shadow: 2px 2px var(--accent-color);
+  box-shadow: 2px 2px 0 0 var(--color-accent);
+  transition: box-shadow 0.3s ease;
 }
 
 /*параграфы*/
@@ -220,7 +216,7 @@
 .card-accent {
   margin-block-end: 25px;
 }
-
+/* 
 .card__like-button::before,
 .save-button::before {
   content: "";
@@ -234,7 +230,7 @@
   transform-origin: left;
   transition: transform 0.5s ease-in-out;
   z-index: 1;
-}
+} */
 
 .button__text {
   position: relative;
@@ -242,12 +238,13 @@
   color: #fff;
   mix-blend-mode: difference;
   z-index: 2;
+  font-family: var(--accent-font, sans-serif);
 }
 
-.card__like-button:hover::before,
+/* .card__like-button:hover::before,
 .save-button:hover::before {
   transform: scaleX(1);
-}
+} */
 
 /*окно*/
 
@@ -274,11 +271,20 @@
 
 .dialog__end-button {
   outline: 1px solid #000;
-  width: 100%;
+  width: 293px;
   padding-inline: 30px;
   padding-block: 10px;
   margin-block-start: 30px;
   text-transform: uppercase;
+}
+
+.dialog {
+  padding: 30px;
+  width: 353px;
+}
+
+.wrapper {
+  width: 293px;
 }
 
 /*фильтры*/
@@ -334,12 +340,6 @@
 
 .button:focus {
   outline: none;
-}
-
-.button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0 0 var(--color-accent);
-  transition: box-shadow 0.3s ease;
 }
 
 .card__like-button::before,

@@ -1,12 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
 --main-font: 'Inter-Variable';
- --accent-font: 'PressStart2P';
+--accent-font: 'PressStart2P';
 --text-card-weight: 400;     
 --heading-card-weight: 700;  
 --color-text: #000000;
 --main-header-size: 65px;
- --text-stroke-color:rgba(255, 255, 255, 0.5);
+--text-stroke-color:rgba(255, 255, 255, 0.5);
 --heading-style-color: #fff;
 --background-color: #fff;
 --bg-color: #fff;
@@ -14,8 +14,6 @@
 --heart-contour-color: #000;
 --animation-fill-color: #FF0000;
 --accent-color: #000;
-
-
 --background-gradient: repeating-linear-gradient(
       to right,
       #d3d3d3,
