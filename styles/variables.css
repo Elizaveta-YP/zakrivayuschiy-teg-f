@@ -2,7 +2,7 @@
 :root {
 --main-font: 'Inter-Variable';
 --accent-font: 'PressStart2P';
---text-card-weight: 400;     
+--main-text-font-weight: 400;     
 --heading-card-weight: 700;  
 --color-text: #000000;
 --main-header-size: 65px;

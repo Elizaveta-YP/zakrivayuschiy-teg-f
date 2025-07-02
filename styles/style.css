@@ -13,7 +13,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wght" var(--text-card-weight);
+  font-variation-settings: "wght" var(--main-text-font-weight);
   color: var(--color-text);
   background-image: var(--background-gradient);
   background-size: cover;
@@ -35,14 +35,14 @@
 .title {
   font-size: clamp(3.0625rem, 2.7091rem + 1.5038vw, 4.0625rem);
   font-family: var(--accent-font, sans-serif);
-  font-variation-settings: "wght" var(--text-card-weight);
+  font-weight: 400;
 }
 
 .header__sub-title {
   font-size: clamp(0.875rem, 0.6762rem + 0.8459vw, 1.4375rem);
   font-family: var(--accent-font, sans-serif);
   text-transform: uppercase;
-  font-variation-settings: "wght" var(--text-card-weight);
+  font-weight: 400;
 }
 
 .header-title {
@@ -93,10 +93,10 @@
   padding: 5px 24px 5px 10px;
   background-color: var(--heading-style-color);
   font-size: 18px;
-  font-variation-settings: "wght" 700;
+ font-weight: var(--heading-card-weight);
 }
 
-.label {
+.picture_explanation {
   font-size: 14px;
   position: absolute;
   z-index: 2;
@@ -192,10 +192,11 @@
 .card__icon-button {
   background-color: var(--background-color);
   border: none;
-  margin-block-start: 2px;
-  margin-inline-end: 5px;
   outline: 2px solid transparent;
   transition: outline-color 0.3s linear;
+  padding: 0;
+  height: 38px;
+  margin-inline-end: 12px;
 }
 
 .card__icon-button:focus-visible {
@@ -203,7 +204,6 @@
 }
 
 .like-icon {
-  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,7 +251,7 @@
   outline: 1px solid #000;
   width: 293px;
   padding-inline: 30px;
-  padding-block: 10px;
+  padding-block: 9px;
   margin-block-start: 30px;
   text-transform: uppercase;
 }
@@ -316,8 +316,7 @@
   outline: none;
 }
 
-.card__like-button::before,
-.save-button::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -331,17 +330,15 @@
   z-index: 1;
 }
 
-.card__like-button:hover::before,
-.save-button:hover::before {
+.button:hover::before {
   transform: scaleX(1);
 }
 
 @media (width <=375px) {
 
   .header-title {
-    width: 100%;
-    margin: 0;
     padding-block: 120px;
+    margin: 0;
   }
 
   .header {
@@ -351,17 +348,8 @@
     padding-block-end: 100px;
   }
 
-  .img {
-    width: 100%;
-    height: auto;
-  }
-
   .label {
     right: 13px;
-  }
-
-  .header__sub-title {
-    font-size: 14px;
   }
 
   .card-item-text {
@@ -372,7 +360,6 @@
   .save-button {
     width: 306px;
     height: 84px;
-    margin: 0;
     margin-inline: 34.5px;
     flex-direction: column;
     gap: 8px;
